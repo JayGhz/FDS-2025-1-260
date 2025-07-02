@@ -1,0 +1,11 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import ContentManager from "@/components/ContentManager.tsx";
+---
+
+<Layout title="DS-TF" description="Rendencias en Videos de Youtube">
+	<SectionContainer class="h-full w-full">
+		<ContentManager client:only="react" />
+	</SectionContainer>
+</Layout>

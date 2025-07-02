@@ -1,0 +1,124 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+
+const navItems = [
+  {
+    title: "Inicio",
+    label: "inicio",
+    url: "graph",
+  },
+  {
+    title: "Dataset",
+    label: "Dataset",
+    url: "dataset",
+  },
+  {
+    title: "EDA",
+    label: "EDA",
+    url: "eda",
+  },
+  {
+    title: "Modelo RNA",
+    label: "Modelo RNA",
+    url: "modelo",
+  },
+  {
+    title: "Predicción",
+    label: "prediccion",
+    url: "prediccion",
+  },
+];
+---
+
+<header
+  class="fixed top-2 botton-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
+>
+  <nav
+    class="flex px-3 opacity-80 text-sm font-medium rounded-full dark:text-zinc-200/90 justify-center items-center"
+  >
+    {
+      navItems.map(({ url, title, label }) => (
+        <a
+          class="relative block px-2 py-2 transition hover hover:text-black hover:font-bold dark:hover:text-white dark:hover:font-bold nav-item"
+          href="#"
+          data-section={url.replace("#", "")}
+          aria-label={label}
+        >
+          {title}
+        </a>
+      ))
+    }
+    <ThemeToggle />
+  </nav>
+</header>
+
+<script>
+  function handleNavClick(event: any) {
+    event.preventDefault();
+    
+    const navItems = document.querySelectorAll(".nav-item");
+    
+    navItems.forEach(item => {
+      item.classList.remove("text-[#ff7c70]", "font-bold");
+    });
+    
+    event.currentTarget.classList.add("text-[#ff7c70]", "font-bold");
+
+    const section = event.currentTarget.getAttribute("data-section");
+    
+    const customEvent = new CustomEvent("sectionChange", {
+      detail: { section: section || "graph" },
+      bubbles: true
+    });
+    
+    document.dispatchEvent(customEvent);
+  }
+
+  function initNavigation() {
+    const navItems = document.querySelectorAll(".nav-item");
+    let activeItem = null;
+
+    navItems.forEach(item => {
+      item.removeEventListener("click", handleNavClick);
+      item.addEventListener("click", handleNavClick);
+    });
+
+    if (navItems.length > 0 && !activeItem) {
+      navItems[0].classList.add("text-[#ff7c70]", "font-bold");
+      activeItem = navItems[0];
+      
+      const initialSection = navItems[0].getAttribute("data-section");
+      
+      setTimeout(() => {
+        const initialEvent = new CustomEvent("sectionChange", {
+          detail: { section: initialSection || "graph" },
+          bubbles: true
+        });
+        
+        document.dispatchEvent(initialEvent);
+      }, 100);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", initNavigation);
+  
+  document.addEventListener("astro:page-load", initNavigation);
+</script>
+
+<style>
+  nav {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+    @apply dark:bg-black/30 bg-[#f9fafb];
+  }
+
+  @keyframes nav-shadown {
+    0% {
+      @apply bg-white/0 dark:bg-gray-100/0;
+    }
+    100% {
+      @apply backdrop-blur-md;
+    }
+  }
+</style>
