@@ -20,7 +20,7 @@ function BarChartVerticalContent() {
     fetch("/requirements.json")
       .then((res) => res.json())
       .then((json) => {
-        setData(json.bestLikeDislikeRatio || []);
+        setData(json.rareChannelsInTrend || []);
       });
   }, []);
 
@@ -129,8 +129,8 @@ function BarChartVerticalContent() {
               }}
             >
               <div className="absolute text-xs -translate-y-1/2 whitespace-nowrap">
-                {entry.key.length > 10
-                  ? `${entry.key.slice(0, 10)}...`
+                {entry.key.length > 4
+                  ? `${entry.key.slice(0, 2)}...`
                   : entry.key}
               </div>
             </div>
@@ -180,7 +180,7 @@ function BarChartVerticalContent() {
             <div>
               <p className="text-sm font-semibold">{tooltip.datum.key}</p>
               <p className="text-xs text-gray-500">
-                {format(".2f")(tooltip.datum.value)}%
+                {format(".2f")(tooltip.datum.value)}
               </p>
             </div>
           </div>
@@ -190,7 +190,7 @@ function BarChartVerticalContent() {
   );
 }
 
-export function BarChartVertical() {
+export function BarChartVertical4() {
   return (
     <TooltipBar>
       <BarChartVerticalContent />

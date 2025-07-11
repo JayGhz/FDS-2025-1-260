@@ -1,0 +1,388 @@
+{
+  "topCategoriesByTrend": [
+    {
+      "name": "ETM",
+      "value": 34.23
+    },
+    {
+      "name": "NWP",
+      "value": 11.67
+    },
+    {
+      "name": "PBG",
+      "value": 10.45
+    },
+    {
+      "name": "CMD",
+      "value": 8.14
+    },
+    {
+      "name": "SPT",
+      "value": 7.3
+    },
+    {
+      "name": "MSC",
+      "value": 6.59
+    },
+    {
+      "name": "HTS",
+      "value": 5.32
+    },
+    {
+      "name": "FLM",
+      "value": 4.79
+    },
+    {
+      "name": "GMG",
+      "value": 2.99
+    },
+    {
+      "name": "SCT",
+      "value": 2.65
+    },
+    {
+      "name": "EDU",
+      "value": 2.49
+    },
+    {
+      "name": "OTH",
+      "value": 3.39
+    }
+  ],
+  "mostLikedCategories": [
+    {
+      "key": "MSC",
+      "value": 185239455,
+      "color": "#B89DFB"
+    },
+    {
+      "key": "ETM",
+      "value": 151720440,
+      "color": "#758bcf"
+    },
+    {
+      "key": "CMD",
+      "value": 84938027,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "PBG",
+      "value": 44798484,
+      "color": "#FFC182"
+    },
+    {
+      "key": "FLM",
+      "value": 27604635,
+      "color": "#87db72"
+    }
+  ],
+  "leastLikedCategories": [
+    {
+      "key": "MOV",
+      "value": 67232,
+      "color": "#B89DFB"
+    },
+    {
+      "key": "SHW",
+      "value": 480041,
+      "color": "#758bcf"
+    },
+    {
+      "key": "TVE",
+      "value": 1984201,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "AUV",
+      "value": 3255257,
+      "color": "#FFC182"
+    },
+    {
+      "key": "UNK",
+      "value": 3278310,
+      "color": "#87db72"
+    }
+  ],
+  "bestLikeDislikeRatio": [
+    {
+      "key": "HTS",
+      "value": 0.97,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "PTA",
+      "value": 0.97,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "GMG",
+      "value": 0.97,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "TVE",
+      "value": 0.96,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "CMD",
+      "value": 0.96,
+      "color": "#33C2EA"
+    }
+  ],
+  "bestViewsCommentsRatio": [
+    {
+      "key": "NWP",
+      "value": 1995.76,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "MOV",
+      "value": 1470.26,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "MSC",
+      "value": 1415.72,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "GMG",
+      "value": 1372.55,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "SHW",
+      "value": 1322.29,
+      "color": "#33C2EA"
+    }
+  ],
+  "trendVolumeOverTime": [
+    {
+      "date": "2017-11-14",
+      "value": 587.0
+    },
+    {
+      "date": "2017-11-19",
+      "value": 528.0
+    },
+    {
+      "date": "2017-11-24",
+      "value": 540.0
+    },
+    {
+      "date": "2017-11-29",
+      "value": 520.0
+    },
+    {
+      "date": "2017-12-04",
+      "value": 561.0
+    },
+    {
+      "date": "2017-12-09",
+      "value": 537.0
+    },
+    {
+      "date": "2017-12-14",
+      "value": 543.0
+    },
+    {
+      "date": "2017-12-19",
+      "value": 568.0
+    },
+    {
+      "date": "2017-12-24",
+      "value": 538.0
+    },
+    {
+      "date": "2017-12-29",
+      "value": 595.0
+    },
+    {
+      "date": "2018-01-03",
+      "value": 546.0
+    },
+    {
+      "date": "2018-01-08",
+      "value": 428.0
+    },
+    {
+      "date": "2018-01-13",
+      "value": 538.0
+    },
+    {
+      "date": "2018-01-18",
+      "value": 569.0
+    },
+    {
+      "date": "2018-01-23",
+      "value": 604.0
+    },
+    {
+      "date": "2018-01-28",
+      "value": 534.0
+    },
+    {
+      "date": "2018-02-02",
+      "value": 598.0
+    },
+    {
+      "date": "2018-02-07",
+      "value": 500.0
+    },
+    {
+      "date": "2018-02-12",
+      "value": 517.0
+    },
+    {
+      "date": "2018-02-17",
+      "value": 519.0
+    },
+    {
+      "date": "2018-02-22",
+      "value": 561.0
+    },
+    {
+      "date": "2018-02-27",
+      "value": 561.0
+    },
+    {
+      "date": "2018-03-04",
+      "value": 573.0
+    },
+    {
+      "date": "2018-03-09",
+      "value": 391.0
+    },
+    {
+      "date": "2018-03-14",
+      "value": 667.0
+    },
+    {
+      "date": "2018-03-19",
+      "value": 600.0
+    },
+    {
+      "date": "2018-03-24",
+      "value": 567.0
+    },
+    {
+      "date": "2018-03-29",
+      "value": 589.0
+    },
+    {
+      "date": "2018-04-03",
+      "value": 681.0
+    },
+    {
+      "date": "2018-04-08",
+      "value": 152.0
+    },
+    {
+      "date": "2018-04-13",
+      "value": 444.0
+    },
+    {
+      "date": "2018-04-18",
+      "value": 596.0
+    },
+    {
+      "date": "2018-04-23",
+      "value": 599.0
+    },
+    {
+      "date": "2018-04-28",
+      "value": 576.0
+    },
+    {
+      "date": "2018-05-03",
+      "value": 582.0
+    },
+    {
+      "date": "2018-05-08",
+      "value": 575.0
+    },
+    {
+      "date": "2018-05-13",
+      "value": 633.0
+    },
+    {
+      "date": "2018-05-18",
+      "value": 539.0
+    },
+    {
+      "date": "2018-05-23",
+      "value": 612.0
+    },
+    {
+      "date": "2018-05-28",
+      "value": 616.0
+    },
+    {
+      "date": "2018-06-02",
+      "value": 602.0
+    },
+    {
+      "date": "2018-06-07",
+      "value": 579.0
+    },
+    {
+      "date": "2018-06-12",
+      "value": 445.0
+    }
+  ],
+  "frequentChannelsInTrend": [
+    {
+      "key": "VikatanTV",
+      "value": 159,
+      "color": "#B89DFB"
+    },
+    {
+      "key": "SET India",
+      "value": 154,
+      "color": "#758bcf"
+    },
+    {
+      "key": "MSNBC",
+      "value": 150,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "RadaanMedia",
+      "value": 149,
+      "color": "#FFC182"
+    },
+    {
+      "key": "ARY Digital",
+      "value": 135,
+      "color": "#87db72"
+    }
+  ],
+  "rareChannelsInTrend": [
+    {
+      "key": "KaskadeVEVO",
+      "value": 1,
+      "color": "#B89DFB"
+    },
+    {
+      "key": "Anime Live Reactions",
+      "value": 1,
+      "color": "#758bcf"
+    },
+    {
+      "key": "Fatos Incr\u00edveis",
+      "value": 1,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "Mann",
+      "value": 1,
+      "color": "#FFC182"
+    },
+    {
+      "key": "Castanet News",
+      "value": 1,
+      "color": "#87db72"
+    }
+  ]
+}

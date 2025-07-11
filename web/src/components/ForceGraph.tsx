@@ -41,8 +41,8 @@ const CATEGORY_MAP: Record<string, string> = {
 };
 
 const PASTEL_COLORS = [
-    '#FFD1DC', '#FFB347', '#FF6961', '#FFCC99', '#FF9999', '#FFB6C1', '#FFE4B5',
-    '#FFDAB9', '#FFC0CB', '#FFFACD', '#FFEFD5', '#FAFAD2', '#FDD9B5', '#FDEBD0'
+    '#B5EAD7', '#C7CEEA', '#9FD8DF', '#A2D2FF', '#BDE0FE', '#98D8D8', '#B8E0D2',
+    '#8FCACA', '#A5DEE5', '#77C3EC', '#89CFF0', '#A7C7E7', '#B6D0E2', '#C4E3CB'
 ];
 
 export default function ForceGraph() {

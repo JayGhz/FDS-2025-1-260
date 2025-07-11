@@ -1,0 +1,106 @@
+[
+  {
+    "state": "Alberta",
+    "views": 1555376004,
+    "likes": 49714397,
+    "dislikes": 3466234,
+    "lat": 53.01669802,
+    "lon": -112.8166386
+  },
+  {
+    "state": "British Columbia",
+    "views": 1556883468,
+    "likes": 51324376,
+    "dislikes": 2511771,
+    "lat": 49.09996035,
+    "lon": -116.516697
+  },
+  {
+    "state": "Manitoba",
+    "views": 1581137990,
+    "likes": 50074485,
+    "dislikes": 2383013,
+    "lat": 50.15002545,
+    "lon": -96.88332178
+  },
+  {
+    "state": "New Brunswick",
+    "views": 1514463330,
+    "likes": 47636450,
+    "dislikes": 1955721,
+    "lat": 45.26704185,
+    "lon": -66.07667505
+  },
+  {
+    "state": "Newfoundland And Labrador",
+    "views": 1545446521,
+    "likes": 45438318,
+    "dislikes": 2059859,
+    "lat": 49.17440025,
+    "lon": -57.42691878
+  },
+  {
+    "state": "Northwest Territories",
+    "views": 1649279691,
+    "likes": 50584693,
+    "dislikes": 2257382,
+    "lat": 62.40005292,
+    "lon": -110.7333291
+  },
+  {
+    "state": "Nova Scotia",
+    "views": 1641457287,
+    "likes": 53162211,
+    "dislikes": 2989301,
+    "lat": 45.58327578,
+    "lon": -62.63331934
+  },
+  {
+    "state": "Nunavut",
+    "views": 1504073304,
+    "likes": 47421482,
+    "dislikes": 2486809,
+    "lat": 68.76746684,
+    "lon": -81.23608303
+  },
+  {
+    "state": "Ontario",
+    "views": 1638789437,
+    "likes": 48693607,
+    "dislikes": 2045336,
+    "lat": 44.56664532,
+    "lon": -80.84998519
+  },
+  {
+    "state": "Prince Edward Island",
+    "views": 1607285692,
+    "likes": 43512857,
+    "dislikes": 2465856,
+    "lat": 46.24928164,
+    "lon": -63.13132512
+  },
+  {
+    "state": "Quebec",
+    "views": 1522865306,
+    "likes": 48623600,
+    "dislikes": 2449842,
+    "lat": 49.82257774,
+    "lon": -64.34799504
+  },
+  {
+    "state": "Saskatchewan",
+    "views": 1412886458,
+    "likes": 44433274,
+    "dislikes": 1931292,
+    "lat": 50.93331097,
+    "lon": -102.7999891
+  },
+  {
+    "state": "Yukon",
+    "views": 1548074641,
+    "likes": 45935639,
+    "dislikes": 1990653,
+    "lat": 61.35037539,
+    "lon": -139.0000017
+  }
+]

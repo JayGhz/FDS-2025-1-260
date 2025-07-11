@@ -13,10 +13,10 @@ export function AnimatedDonutChart({
 
   const [data, setData] = useState<Item[]>([]);
   useEffect(() => {
-    fetch("/eda.json")
+    fetch("/requirements.json")
       .then((res) => res.json())
       .then((json) => {
-        const pieData = json.pieChart || [];
+        const pieData = json.topCategoriesByTrend || [];
         setData(pieData);
       });
   }, []);
@@ -60,7 +60,10 @@ export function AnimatedDonutChart({
   const minAngle = 20; // Adjust this value as needed
 
   const colors = {
-    purple: ["#7e4cfe", "#895cfc", "#956bff", "#a37fff", "#b291fd", "#b597ff"],
+    purple: [
+      "#7e4cfe", "#895cfc", "#956bff", "#a37fff", "#b291fd", "#b597ff",
+      "#cab7fd", "#d3c2fe", "#dfccff", "#ead9ff", "#f2e4ff", "#f7edff"
+    ],
     blue: ["#73caee", "#73caeeee", "#73caeedd", "#73caeecc", "#73caeebb", "#73caeeaa"],
     fuchsia: ["#f6a3ef", "#f6a3efee", "#f6a3efdd", "#f6a3efcc", "#f6a3efbb", "#f6a3efaa"],
     yellow: ["#f6e71f", "#f6e71fee", "#f6e71fdd", "#f6e71fcc", "#f6e71fbb", "#f6e71faa"],
@@ -68,17 +71,17 @@ export function AnimatedDonutChart({
 
   return (
     <div className="relative mt-4">
-            <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center">
           <p className={`text-lg text-zinc-500`}>Total</p>
-          <p className={`text-4xl transition-colors duration-300 font-bold`}>1M</p>
+          <p className={`text-4xl transition-colors duration-300 font-bold`}>23K</p>
         </div>
       </div>
       <svg
         viewBox={`-${radius} -${radius} ${radius * 2} ${radius * 2}`}
         className="max-w-[16rem] mx-auto overflow-visible"
       >
-        
+
         {/* Sectors with Gradient Fill and Stroke */}
         {arcs.map((d, i) => {
           // console.log(d, "d");
@@ -105,26 +108,23 @@ export function AnimatedDonutChart({
                 d={arcGenerator(d) || undefined}
               />
               {/* Labels with conditional rendering */}
-              <g opacity={angle > minAngle ? 1 : 0}>
-                <text transform={`translate(${centroid})`} textAnchor="middle" fontSize={38} className={textColorClass}>
-                  <tspan
-                    y="-0.4em"
-                    fontWeight="700"
-                    fontSize={56}
-                  >
-                    {d.data.name}
-                  </tspan>
-                  {angle > minAngle && (
-                    <tspan
-                      x={0}
-                      y="0.7em"
-                      fillOpacity={1.2}
-                    >
-                      {d.data.value.toLocaleString("en-US")}%
-                    </tspan>
+              <g opacity={1}>
+                <text transform={`translate(${centroid})`} textAnchor="middle" className={textColorClass}>
+                  {angle > minAngle ? (
+                    <>
+                      <tspan y="-0.4em" fontWeight="700" fontSize={44}>
+                        {d.data.name}
+                      </tspan>
+                      <tspan x={0} y="0.7em" fontSize={32}>
+                        {d.data.value.toLocaleString("en-US")}%
+                      </tspan>
+                    </>
+                  ) : (
+                    <tspan y="0.3em" fontSize={60}>•</tspan>
                   )}
                 </text>
               </g>
+
             </AnimatedSlice>
           );
         })}

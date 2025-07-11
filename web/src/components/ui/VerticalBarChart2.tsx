@@ -20,7 +20,7 @@ function BarChartVerticalContent() {
     fetch("/requirements.json")
       .then((res) => res.json())
       .then((json) => {
-        setData(json.bestLikeDislikeRatio || []);
+        setData(json.bestViewsCommentsRatio || []);
       });
   }, []);
 
@@ -190,7 +190,7 @@ function BarChartVerticalContent() {
   );
 }
 
-export function BarChartVertical() {
+export function BarChartVertical2() {
   return (
     <TooltipBar>
       <BarChartVerticalContent />

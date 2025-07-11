@@ -206,5 +206,47 @@
       "name": "AE",
       "value": 0.03
     }
+  ],
+  "topCategoriesByTrend": [
+    {
+      "key": "Entertainment",
+      "value": 34.23,
+      "color": "#B89DFB"
+    },
+    {
+      "key": "News & Politics",
+      "value": 11.67,
+      "color": "#758bcf"
+    },
+    {
+      "key": "People & Blogs",
+      "value": 10.45,
+      "color": "#33C2EA"
+    },
+    {
+      "key": "Comedy",
+      "value": 8.14,
+      "color": "#FFC182"
+    },
+    {
+      "key": "Sports",
+      "value": 7.3,
+      "color": "#87db72"
+    },
+    {
+      "key": "Music",
+      "value": 6.59,
+      "color": "#B89DFB"
+    },
+    {
+      "key": "Howto & Style",
+      "value": 5.32,
+      "color": "#758bcf"
+    },
+    {
+      "key": "Others",
+      "value": 16.310000000000002,
+      "color": "#33C2EA"
+    }
   ]
 }

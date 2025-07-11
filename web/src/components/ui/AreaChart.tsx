@@ -13,10 +13,10 @@ export function AnimatedOutlinedAreaChart() {
     const [data, setData] = useState<Point[]>([]);
 
     useEffect(() => {
-        fetch("/eda.json")
+        fetch("/requirements.json")
             .then((res) => res.json())
             .then((json) => {
-                const loaded = json.areaChart || [];
+                const loaded = json.trendVolumeOverTime || [];
                 const parsed = loaded.map((d: any) => ({
                     date: new Date(d.date),
                     value: d.value,

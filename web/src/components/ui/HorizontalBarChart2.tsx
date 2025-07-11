@@ -180,14 +180,14 @@ function HorizontalBarChartContent({ data }: { data: Datum[] }) {
   );
 }
 
-export function HorizontalBarChart() {
+export function HorizontalBarChart2() {
   const [data, setData] = useState<Datum[] | null>(null);
 
   useEffect(() => {
     fetch("/requirements.json")
       .then((res) => res.json())
       .then((json) => {
-        setData(json.mostLikedCategories);
+        setData(json.leastLikedCategories);
       })
       .catch((err) => console.error("Error loading data:", err));
   }, []);
