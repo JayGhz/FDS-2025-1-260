@@ -6,7 +6,7 @@ import { BarChartVertical } from "@/components/ui/VerticalBarChart";
 
 export default function EDA() {
     return (
-        <div className="md:p-[5em] mx-8 lg:m-28 mt-24 lg:mt-0 lg:mb-12 mb-32 md:mt-4">
+        <div className="md:p-[5em] mx-8 lg:m-28 mt-24 lg:mt-0 xl:mx-64 lg:mb-12 mb-32 md:mt-4">
             
             <div className="grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 gap-8 lg:gap-4">
                 <div className="border border-zinc-300 dark:border-zinc-200/20 rounded-xl p-6">
