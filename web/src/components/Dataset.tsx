@@ -1,6 +1,6 @@
 export function Dataset() {
     return (
-            <article className="flex flex-col items-center justify-center gap-8 text-gray-700 lg:mb-[-20px] dark:text-gray-300 m-28 lg:m-44 md:flex-row">
+            <article className="flex flex-col items-center justify-center gap-8 text-gray-700 lg:mb-[-20px] dark:text-gray-300 p-48 xl:mx-44 xl:my-12 md:flex-row">
                 <div className="[&>p]:mb-4 [&>p>strong]:text-[#ff7c70] dark:[&>p>strong]:text-[#ff7c70] [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
                 <div className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
 
