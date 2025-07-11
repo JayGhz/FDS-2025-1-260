@@ -5,7 +5,7 @@ import mapboxgl, { Map, Marker, Popup } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 // Token de Mapbox
-mapboxgl.accessToken = "pk.eyJ1IjoiamF5Z2h6IiwiYSI6ImNtY3llMWp4ZDBraDIya3E0dGN5c2VudmEifQ.FvUdq7I0Rks9t9cnLbwGrw";
+mapboxgl.accessToken = "pk.eyJ1IjoiamF5Z2h6IiwiYSI6ImNtY3l1anYwODBteTYybHB3MDM1OTJhc20ifQ.4PkzRVH_H2HM4g5LyxPF6w";
 
 // Tipado de los puntos
 interface GeoPoint {
