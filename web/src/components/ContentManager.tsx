@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import ForceGraph from '@/components/ForceGraph';
 import ModeloRNA from '@/components/ModeloRNA';
 import Prediccion from '@/components/Prediccion';
-import EDA from '@/components/EDA';
 import { Dataset } from '@/components/Dataset';
+import Requeriments from '@/components/Requeriments';
 
 declare global {
     interface Window {
@@ -78,8 +78,8 @@ export default function ContentManager() {
                 return <ModeloRNA />;
             case 'prediccion':
                 return <Prediccion />;
-            case 'eda':
-                return <EDA />;
+            case 'requerimientos':
+                return <Requeriments />;
             default:
                 return <ForceGraph />;
         }

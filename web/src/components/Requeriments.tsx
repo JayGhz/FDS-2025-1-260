@@ -4,7 +4,7 @@ import { AnimatedLineChart } from "@/components/ui/Linechart";
 import { AnimatedDonutChart } from "@/components/ui/PieChart";
 import { BarChartVertical } from "@/components/ui/VerticalBarChart";
 
-export default function EDA() {
+export default function Requeriments() {
     return (
         <div className="md:p-[5em] mx-8 lg:m-28 mt-24 lg:mt-0 xl:mx-64 lg:mb-12 mb-32 md:mt-4">
             
